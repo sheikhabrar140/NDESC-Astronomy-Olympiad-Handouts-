@@ -12,7 +12,19 @@ NDESC Interstellar is the academic team of the Notre Dame Eco and Space Club (ND
 
 ## Meet the Team
 
-Sheikh Hasin Abrar – IOAA 2024
-Omor Bin Hayat
-Tasdik Ahmed Tonmay – IOAA 2024 🥉 | IOAA 2025 🥈
-Junaed Labeeb Al Waasi – 3× IOAA Camper
+Sheikh Hasin Abrar – IOAA 2024  
+Omor Bin Hayat  
+Tasdik Ahmed Tonmay – IOAA 2024 🥉 | IOAA 2025 🥈  
+Junaed Labeeb Al Waasi – 3× IOAA Camper  
+Nirban Bin Shahjahan - IAO 2025  
+
+## 📬 Contact  
+
+If you would like to contribute or collaborate, feel free to reach out:  
+
+- 📧 **Sheikh Hasin Abrar** – abraralvi140@gmail.com    
+- 📧 **NDESC Research & Academics Department** – ndescrna@gmail.com    
+
+We welcome contributions, feedback, and collaboration to further strengthen astronomy education in Bangladesh.
+
+
