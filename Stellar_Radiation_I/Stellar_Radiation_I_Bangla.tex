@@ -1,0 +1,212 @@
+\documentclass{article}
+\usepackage{graphicx} % Required for inserting images
+\usepackage{amsmath, amssymb, amsthm}
+\title{
+\vspace{-2cm} % adjust spacing if needed
+\includegraphics[width=0.1\textwidth]{logo.png} \\[0.5cm] 
+{\bn নাক্ষত্রিক বিকিরণ I }}
+\author{{\bn শেখ হাসিন আবরার}}
+\date{August 28, 2025}
+\usepackage[a4paper, left=2cm, right=2cm, top=2.5cm, bottom=2.5cm]{geometry}
+\usepackage{tcolorbox}
+\usepackage{polyglossia}
+\setdefaultlanguage[numerals=Bengali, changecounternumbering=true]{bengali}
+\usepackage{fontspec}
+\newfontface{\bn}{kalpurush.ttf}
+\newfontfamily\bengalifont{kalpurush.ttf}[Script=Bengali]
+\begin{document}
+\maketitle
+\section{{\bn নাক্ষত্রিক ফ্লাক্স}}
+{\bn 
+বিকিরণ সম্পর্কিত সূত্রগুলো বোঝা অত্যন্ত গুরুত্বপূর্ণ, কারণ এগুলোর মাধ্যমে আমরা জানতে পারি কীভাবে আমরা মহাজাগতিক বস্তুকে পর্যবেক্ষণ করি এবং তারা যে তথ্য পাঠায়, তা কীভাবে ব্যাখ্যা করতে হয়। এই নীতিগুলোর সাহায্যে আমরা শুধু আকাশে দৃশ্যমান বস্তুগুলো চিনতেই পারি না, বরং তারা যে বিকিরণ নির্গত করে, তা বিশ্লেষণ করে তাদের আকার, তাপমাত্রা, দূরত্ব ও গঠন সম্পর্কেও বিপুল পরিমাণ তথ্য জানতে পারি।
+এখানে তোমরা কিছু গুরুত্বপূর্ণ সূত্র পাবে, যা জ্যোতির্বিজ্ঞানে বিকিরণ সম্পর্কিত সমস্যার সমাধানে সহায়ক হবে।}
+\subsection{{\bn কৃষ্ণবস্তু }}
+{\bn 
+একটি কৃষ্ণবস্তু (Blackbody) হলো এমন একটি তাত্ত্বিক বস্তু, যা তার উপর আপতিত সব ধরনের দৃশ্য ও অদৃশ্য তড়িৎচুম্বকীয় বিকিরণ সম্পূর্ণভাবে শোষণ করে, কিন্তু কোনো বিকিরণ প্রতিফলিত বা প্রতিসারিত করে না। যদিও মহাবিশ্বে কোনো নিখুঁত কৃষ্ণবস্তু নেই, তবুও অনেক মহাজাগতিক বস্তু (যেমন তারা বা গ্রহ) তাদের আচরণের কারণে প্রায়ই ব্ল্যাকবডি হিসেবে ধরা হয়, কারণ তারা এই বৈশিষ্ট্যের খুব কাছাকাছি আচরণ করে। জ্যোতির্বিজ্ঞান অলিম্পিয়াডের সমস্যাগুলোতে আমরা প্রায়ই এই ধরনের ব্ল্যাকবডি অনুমান (approximation) ব্যবহার করি।
+}
+\\[1EM]
+\noindent
+{\bn সাধারণ বস্তুর ক্ষেত্রে}  $$a + r + t = 1$$
+\\
+{\bn কৃষ্ণবস্তুর ক্ষেত্রে}
+\\ $$a + 0 + 0 = 1$$
+\\ $$a=1$$
+\\ {\bn যেখানে a (absorption) হলো বস্তুতে আপতিত বিকিরণের শোষিত অংশ, r (reflection) হলো প্রতিফলিত অংশ এবং t (transmission)  দিয়ে সঞ্চালিত অংশ বোঝায়। }
+
+\subsection{\bn  বিকিরণ সূত্রাবলী}
+\subsubsection{{\bn  ভিনের সূত্র}-Wien's Law}
+{\bn ভিনের সূত্র একটি বস্তুর তাপমাত্রা এবং তার রঙের মধ্যে সম্পর্ক স্থাপন করে। এটি সর্বাধিক তরঙ্গদৈর্ঘ্য এবং তাপমাত্রার মধ্যে বিপরীত সমানুপাতিক সম্পর্ক নির্ধারণ করে, যা ব্যাখ্যা করে কেন তাপমাত্রা বেশি নক্ষত্রগুলো নীল দেখায়, আর তাপমাত্রা কম নক্ষত্রগুলো লাল দেখায়। }
+
+$$\lambda_{max} * T = constant $$
+$$\boxed{\lambda_{max}=\frac{b}{T}}$$
+\\{\bn এখানে b= 0.0029mK হলো সমানুপাতিক ধ্রুবক, যা ভিনের ধ্রুবক (Wien’s Constant) নামে পরিচিত।}
+\\ 
+\\
+\newpage 
+\begin{tcolorbox}[colback=blue!5!white,
+                  colframe=blue!75!black,
+                  title=Problem 1]
+What is the temperature of the photosphere(light emitting layer) of our Sun, whose spectrum peaks in the center of the visible part of the electromagnetic spectrum at about 500nm ?
+\end{tcolorbox}
+\\
+\begin{tcolorbox}[colback=blue!5!white,
+                  colframe=blue!75!black,
+                  title=Solution]
+$$\lambda_{peak}=\frac{b}{T} $$ 
+$$T=\frac{b}{\lambda_{peak}}$$
+$$T=\frac{0.0029mK}{500nm}=5800K$$
+\end{tcolorbox}
+\subsubsection{{\bn স্টেফান-বল্টজম্যানের সূত্র}-Stefan-Boltzmann law}
+{\bn স্টেফান-বল্টসম্যান সূত্র কোনো নক্ষত্রের মোট বিকিরিত শক্তি নির্ণয়ের জন্য একটি মৌলিক সূত্র। এর মাধ্যমে আমরা বুঝতে পারি, সেই শক্তির কতটা নিকটবর্তী বস্তুর উপর পতিত হয়।
+\\
+একটি কৃষ্ণবস্তুর প্রতি একক ক্ষেত্রফল থেকে প্রতি একক সময়ে সকল তরঙ্গদৈর্ঘ্যে বিকিরিত মোট শক্তি তার পরম তাপমাত্রার চতুর্থ ঘাতের সমানুপাতিক।}
+$$E=\sigma \times T^4$$
+\\{\bn এখানে }$\sigma = 5.67 \times 10^{-8}\, W\,m^{-2}\,K^{-4}$ {\bn(যাকে Stefan–Boltzmann ধ্রুবক বলে) এবং T হলো বস্তুর পৃষ্ঠ তাপমাত্রা}
+\\
+{\bn ফ্লাক্স ঘনত্বকে নক্ষত্রের পৃষ্ঠের ক্ষেত্রফলের সঙ্গে গুণ করলে আমরা মোট নাক্ষত্রিক ক্ষমতা (luminosity) পাই।
+Luminosity সংজ্ঞায়িত করা হয় একটি তারা প্রতি সেকেন্ডে যে পরিমাণ শক্তি (J/s বা ওয়াটে) বিকিরণ করে, সেই হিসেবে।
+জ্যোতির্বিজ্ঞানে, এটি একটি নক্ষত্রের ‘‘ঔজ্জ্বল্য’’ এর সঙ্গে সম্পর্কিত।}
+$$L = 4 \pi R^{2} \times E$$
+$$\boxed{L = 4 \pi R^{2} \sigma T^{4}}$$
+\\{\bn নিঃসরণ গুণাঙ্ক e বিবেচনা করলে, আমরা নিম্নলিখিত সমীকরণটি পাই}
+$$\boxed{L = 4 \pi R^{2} e \sigma T^{4}}$$
+\\{\bn আদর্শভাবে,e=1। সুতরাং, অধিকাংশ সমস্যায় যদি (emissivity) দেওয়া না থাকে, তবে আমরা সর্বদা ধরে নেব যে e=1}
+\\[1em]
+{\bn এখন আমরা ঐ তারা থেকে দূরত্বে ফ্লাক্স হিসাব করব। ধরুন তারা isotropically শক্তি নির্গত করে যার ক্ষমতা হলো L। তারা থেকে d দূরত্বে সেই শক্তি একটি ব্যাসার্ধ d বিশিষ্ট গোলকের উপর বিতরণ হয় যার পৃষ্ঠফল 4$\pi$d^2$ অতএব ঐ দূরত্বে ফ্লাক্স হলো}
+: 
+$$\boxed{F=\frac{L}{4\pi d^{2}}}$$ 
+\\
+{\bn অতএব, আমরা দেখি যে ফ্লাক্স(Flux) দূরত্বের বর্গের বিপরীত সমানুপাতিক।}
+\\[2EM]
+\begin{tcolorbox}[colback=blue!5!white,
+                  colframe=blue!75!black,
+                  title=Problem 2]
+A supernova shines with a luminosity $10^{10}$ times that of the Sun. If the supernova appears in our sky as bright as the Sun, how far away(in parsec) from us must it be located. 
+[IO7-T11-A]
+\end{tcolorbox}
+\newpage
+\noindent
+\begin{tcolorbox}[colback=blue!5!white,
+                  colframe=blue!75!black,
+                  title=Solution]
+As the supernova appears in the Sky as bright as the Sun, hence the received Flux from both of them in Earth's Surface must be same. 
+\\
+Let d be the distance to that Supernova.
+\\
+$$F_{supernova}=F_{Sun}$$
+$$\frac{L_{supernova}}{4\pi d^{2}}=\frac{L_{Sun}}{4\pi d_{sun}^2}$$
+$$\frac{10^{10}}{4\pi d^2}=\frac{1}{4\pi (1AU)^2}$$
+$$d=10^{\frac{10}{2}}AU=10^5 AU = 1.496 \times 10^{16}=0.5 pc$$
+\\[3EM]
+\end{tcolorbox}
+\section{\bn  ঔজ্জ্বল্য}
+{\bn এটি একটি সহজ স্কেলে নক্ষত্রের উজ্জ্বলতা তুলনা করার একটি পদ্ধতি। ঔজ্জ্বল্য(Magnitude) যত কম, আকাশীয় বস্তুটি তত বেশি উজ্জ্বল দেখা যায়।}
+\subsection{\bn  ইতিহাস}
+{\bn প্রাচীনকাল থেকেই জ্যোতির্বিদেরা নাক্ষত্রিক গোলকে নক্ষত্রগুলোর অবস্থান নথিভুক্ত করেছেন এবং তাদের উজ্জ্বলতা পরিমাপ করেছেন।
+খ্রিস্টপূর্ব ১৬০ সালে গ্রিক জ্যোতির্বিদ হিপারকাস প্রথম নাক্ষত্রিক তালিকা (stellar catalogue) তৈরি করেন।
+সে সময় তিনি উজ্জ্বলতা নির্ধারণের জন্য একটি পদ্ধতি প্রণয়ন করেন। সন্ধ্যা হওয়ার সঙ্গে সঙ্গেই যেসব তারা উজ্জ্বলভাবে দৃশ্যমান হয়, সেগুলোকে তিনি প্রথম মাত্রার (১ম magnitude) তারা হিসেবে শ্রেণিবদ্ধ করেন। এরপর ক্রমান্বয়ে কম উজ্জ্বল তারাগুলোকে দ্বিতীয়, তৃতীয় ইত্যাদি মাত্রায় বিভক্ত করেন, এবং যেসব তারা খালি চোখে দেখা প্রায় দুষ্কর, সেগুলোকে বলেন ষষ্ঠ মাত্রার (৬ষ্ঠ magnitude) তারা।
+এভাবে তিনি নক্ষত্রগুলোকে উজ্জ্বলতার ভিত্তিতে ছয়টি শ্রেণিতে ভাগ করেন যেখানে প্রথম মাত্রা বোঝায় সবচেয়ে উজ্জ্বল নক্ষত্র এবং ষষ্ঠ মাত্রা বোঝায় খালি চোখে কেবলমাত্র দৃশ্যমান নক্ষত্র।
+\\
+পরে, ১৮৫৪ সালে নরমান পগসন (Norman Pogson) হিপারকাসের স্কেলটি আরও সুনির্দিষ্টভাবে পুনর্গঠন করেন। এই নতুন স্কেল অনুযায়ী নির্ধারণ করা হয় যে প্রথম মাত্রার একটি নক্ষত্র ও ষষ্ঠ মাত্রার একটি নক্ষত্রের ফ্লাক্সের অনুপাত হবে ১০০।} \textit{[Fundamentals of Astronomy–Flavio Salvati]}
+\subsection{\bn  পগসনের সূত্র (Pogson’s Law)}
+{\bn
+ঔজ্জ্বল্যের মাত্রা লগারিদমিক স্কেলে প্রকাশিত হয়। উদাহরণস্বরূপ, ১.০ ঔজ্জ্বল্যের একটি তারা ২.০ ঔজ্জ্বল্যের তারার তুলনায় প্রায় ২.৫ গুণ বেশি উজ্জ্বল।
+এই সম্পর্কটি পগসনের সূত্র (Pogson’s Formula) দ্বারা প্রকাশ করা যায়।
+এই সূত্রটি কোনো নক্ষত্রের সুনির্দিষ্ট ঔজ্জ্বল্য নির্ধারণ করে না, বরং দুটি নক্ষত্রের উজ্জ্বলতার মধ্যে সম্পর্ক ব্যাখ্যা করে। }
+$$m_1 - m_2 = -2.5 \log(\frac{I_1}{I_2})$$
+{\bn এখানে } $m_1$ {\bn = প্রথম তারার ঔজ্জ্বল্য মান,}$m_2${\bn = দ্বিতীয় তারার ঔজ্জ্বল্য মান}
+$I_1$ {\bn = প্রথম তারার উজ্জ্বলতা,}  $I_2$ {\bn = দ্বিতীয় তারার উজ্জ্বলতা। }
+\\
+{\bn এই সূত্র অনুযায়ী, মাত্রা যত ঋণাত্মক দিকে যাবে, উজ্জ্বলতা তত বেশি হবে।}
+
+\subsection{\bn  আপাত ঔজ্জ্বল্য}
+{\bn আপাত ঔজ্জ্বল্য (apparent magnitude), সাধারণত m দ্বারা প্রকাশ করা হয়, এটি নির্দেশ করে পৃথিবী থেকে কোনো তারা বা মহাজাগতিক বস্তুর উজ্জ্বলতা কেমন দেখায়।
+এটি ফ্লাক্স ঘনত্ব (flux density) ব্যবহার করে নির্ণয় করা যায়, যা পর্যবেক্ষকের অবস্থান ও আলোক-নিঃসরণকারী বস্তুর আপেক্ষিক দূরত্বের উপর নির্ভর করে পরিবর্তিত হয়। }
+$$m_1 - m_2 = -2.5 \log(\frac{F_1}{F_2})$$
+\\
+\newpage
+\begin{tcolorbox}[colback=blue!5!white,
+                  colframe=blue!75!black,
+                  title=Problem 3]
+The magnitude of the faintest star you can see with naked eyes is m = 6,
+whereas that of the brightest star in the sky is m = −1.5. What is the
+energy-flux ratio of the faintest to that of the brightest? (I07 - T15 -
+A) \\
+{\bn খালি চোখে দেখা যায় এমন সবচেয়ে ম্লান নক্ষত্রের ঔজ্জ্বল্য মান m=6 । অন্যদিকে আকাশের সবচেয়ে উজ্জ্বল নক্ষত্রের ঔজ্জ্বল্য মান m=-1.5 । তাহলে সবচেয়ে ম্লান ও সবচেয়ে উজ্জ্বল নক্ষত্রের ফ্লাক্সের অনুপাত কত?}
+\end{tcolorbox}
+\noindent
+\begin{tcolorbox}[colback=blue!5!white,
+                  colframe=blue!75!black,
+                  title=Solution]
+The flux ratio can be calculated as, 
+
+$$
+    m_1 - m_2 = -2.5 \log \left( \frac{F_1}{F_2} \right)
+$$
+
+\[
+\therefore \quad \frac{F_1}{F_2} = 10^{\frac{(m_2 - m_1)}{2.5}}
+\]
+
+\[
+\frac{F_{\text{min}}}{F_{\text{max}}} = 10^{\frac{6.0 - (-1.5)}{2.5}} 
+= 10^{\tfrac{7.5}{2.5}} = 1000 }
+\]
+Thus, the brightest star is 1000 times brighter than the faintest star  
+visible to the naked eye.
+\end{tcolorbox}
+\subsection{\bn  পরম ঔজ্জ্বল্য (Absolute Magnitude)}
+{\bn দুটি তারা বা মহাজাগতিক বস্তু একই রকম আলোকিত মনে হতে পারে পৃথিবী থেকে তাদের দূরত্বের কম-বেশির কারণে। তখন আমরা বুঝতে পারি না, আসলে কোনটি নিজে থেকেই বেশি উজ্জ্বল। এই সমস্যার সমাধান খুঁজতে গিয়ে জ্যোতির্বিজ্ঞানীরা ঠিক করলেন সব তারাকে যদি ১০ পারসেক দূরত্বে স্থাপন করে পর্যবেক্ষণ করা যায়!
+\\
+এভাবে, সব তারাকে একই দূরত্বে রেখে তাদের ঔজ্জ্বল্যের যে মান নির্ধারণ করা হয়, সেটাকেই বলা হয় পরম ঔজ্জ্বল্য বা Absolute Magnitude।}
+\\[1EM]
+{\bn আমরা পগসনের সূত্র (Pogson’s Law) থেকে পরম ঔজ্জ্বল্য ও আপাত ঔজ্জ্বল্যের মধ্যে একটি সম্পর্ক নির্ণয় করতে পারি।}
+$$m-M=-2.5\log \left( \frac{F_{app}}{F_{abs}} \right)$$
+Where m= {\bn আপাত ঔজ্জ্বল্য}, M={\bn পরম ঔজ্জ্বল্য}. 
+
+\subsection{\bn  দূরত্ব মডুলাস (Distance Modulus)}
+{\bn আপাত ও পরম ঔজ্জ্বল্যের মধ্যে সম্পর্ক থেকে আমরা সেই মহাজাগতিক বস্তুর দূরত্ব নির্ণয় করতে পারি। Luminosity এর মান না জেনেও এই সূত্রের সাহায্যে আমরা কাজ করতে পারি। 
+$$m-M=-2.5\log \left( \frac{F_{app}}{F_{abs}} \right)$$
+\begin{align*}
+m - M &= -2.5 \log \left( \frac{\tfrac{L}{4\pi d^2}}{\tfrac{L}{4\pi (10 \, \text{pc})^2}} \right) \\
+m - M &= -2.5 \log \left( \frac{(10 \, \text{pc})^2}{d^2} \right) \\[6pt]
+m - M &= 2.5 \log \left( \frac{d^2}{(10 \, \text{pc})^2} \right) \\[6pt]
+m - M &= 5 \log \left( \frac{d}{10 \, \text{pc}} \right) \\
+m - M &= 5 \log(d) - 5
+\end{align*}
+{\bn অতএব, distance modulus প্রকাশ করা যেতে পারে : }
+$$\boxed{m-M=5\log(d)-5}$$
+\[
+\boxed{d = 10^{\tfrac{m - M + 5}{5}}}
+\]
+\\[2EM]
+\begin{tcolorbox}[colback=blue!5!white,
+                  colframe=blue!75!black,
+                  title=Problem 4]
+Vega is known to have an apparent
+magnitude of about 0 (in reality it is about 0.03 and fluctuates.) Given that it has an absolute magnitude of about 0.58, calculate the distance.
+[USAAAO]
+\\[1EM]
+{\bn ভেগা (Vega) তারাটির আপাত ঔজ্জ্বল্য প্রায় ০ (আসলে প্রায় ০.০৩ এবং সামান্য পরিবর্তনশীল)।
+যদি এর পরম ঔজ্জ্বল্য প্রায় ০.৫৮ হয়, তবে এর দূরত্ব নির্ণয় করো।}
+\end{tcolorbox}
+\noindent
+\begin{tcolorbox}[colback=blue!5!white,
+                  colframe=blue!75!black,
+                  title=Solution]
+Applying the equation of distance modulus we get,
+\\
+\[
+d = 10^{\frac{(0.03 - 0.58 + 5)}{5}} \ \text{pc}
+\]
+
+\[
+d = 10^{0.89} \ \text{pc}
+\]
+
+\[
+d \approx 7.76 \ \text{pc}
+\]
+Therefore Vega is 7.76 pc away from Earth.
+\end{tcolorbox}
+\end{document}

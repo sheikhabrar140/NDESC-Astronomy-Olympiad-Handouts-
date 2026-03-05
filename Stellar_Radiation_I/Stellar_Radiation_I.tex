@@ -1,0 +1,210 @@
+\documentclass{article}
+\usepackage{graphicx} % Required for inserting images
+\usepackage{amsmath, amssymb, amsthm}
+\title{
+    \vspace{-2cm}
+    \includegraphics[width=0.1\textwidth]{Images/NDESC Logo.png} \\[0.4cm]
+    Stellar Radiation I
+}
+\author{Sheikh Hasin Abrar}
+\date{August 28, 2025}
+\usepackage[a4paper, left=2cm, right=2cm, top=2.5cm, bottom=2.5cm]{geometry}
+\usepackage{tcolorbox}
+\begin{document}
+
+\maketitle
+
+\section{Stellar Flux Relationships}
+\subsection{Introduction}
+Understanding radiation laws is fundamental to exploring how we observe celestial bodies and interpret the data they provide. Through these principles, we can not only recognize visible objects in the sky but also uncover a wealth of information about their properties, such as size, temperature, distance, and composition by using the radiation they emit. Here you will find some key formulas that will be useful for solving radiation problems in astronomy.
+
+\subsection{Blackbody}
+
+A blackbody is an idealized object that completely absorbs all incoming radiation and re-emits it uniformly in every direction, with an albedo of 0. While no perfect blackbody exists in the universe, many celestial bodies are often approximated as blackbodies because of how closely they resemble this behavior. We will frequently use such approximation in astrophysics and Astronomy Olympiad problems.
+\\
+For any object  $$a + r + t = 1$$
+\\
+For blackbodies 
+\\ $$a + 0 + 0 = 1$$
+\\ $$a=1$$
+\\ Where a = absorption, r = reflection, t=transmission
+
+\subsection{Black Body Radtion Laws}
+\subsubsection{Wien's Laws}
+Wien's law relates an object's temperature to its color. It establishes an inverse relation between the peak wavelength and temperature, explaining why hotter stars appear bluer while cooler ones appear redder.
+
+$$\lambda_{max} * T = constant $$
+$$\boxed{\lambda_{max}=\frac{b}{T}}$$
+\\
+Here, the constant is known as the Wien’s constant, with a value of about 0.0029mK in SI units.
+\\ 
+\\
+\newpage 
+\begin{tcolorbox}[colback=blue!5!white,
+                  colframe=blue!75!black,
+                  title=Problem 1]
+What is the temperature of the photosphere(light emitting layer) of our Sun, whose spectrum peaks in the center of the visible part of the electromagnetic spectrum at about 500nm ?
+\end{tcolorbox}
+\\
+\begin{tcolorbox}[colback=blue!5!white,
+                  colframe=blue!75!black,
+                  title=Solution]
+$$\lambda_{peak}=\frac{b}{T} $$ 
+$$T=\frac{b}{\lambda_{peak}}$$
+$$T=\frac{0.0029mK}{500nm}=5800K$
+\end{tcolorbox}
+\subsubsection{ Stefan-Boltzmann law}
+The Stefan-Boltzmann law is fundamental for calculating the total energy emitted by a star. And therefore, we can understand how much of that energy falls on nearby objects.
+ \\
+ Total Energy radiated in all wavelentghs by a blackbody per unit area per unit time is proportional to the 4th power of absolute temperature.
+
+$$E=\sigma \times T^4$$
+\\
+Where $T =$ surface temperature, 
+$\sigma = 5.67 \times 10^{-8}\, W\,m^{-2}\,K^{-4}$ (also known as the Stefan–Boltzmann’s constant.
+\\[1em]
+ Multiplying the flux density times the surface area of the star, we get the total luminosity. 
+Luminosity is defined as the energy radiated by an object per unit of time (J/s or watts). In astronomy, it is associated with a star’s intrinsic brightness.
+$$L = 4 \pi R^{2} \times E$$
+$$\boxed{L = 4 \pi R^{2} \sigma T^{4}}$$
+\\
+Considering the emissivity factor e, we can get the equation.
+$$\boxed{L = 4 \pi R^{2} e \sigma T^{4}}$$
+Ideally, e = 1. So, for most of the problems, if the emissivity is not given, we will always assume that e = 1.
+\\[1em]
+Now we calculate the Flux at a distance from that star. Assuming that the star radiates isotropically with power L, at a distance d from the star its energy diustributed on a sphere of radius d with surface area 4$\pi$d^2$. There the flux at this distance is : 
+
+$$\boxed{F=\frac{L}{4\pi d^{2}}}$$ 
+\\
+So we see the Flux is inversly proportional to the square of distance.
+\\[2EM]
+\begin{tcolorbox}[colback=blue!5!white,
+                  colframe=blue!75!black,
+                  title=Problem 2]
+A supernova shines with a luminosity $10^{10}$ times that of the Sun. If the supernova appears in our sky as bright as the Sun, how far away(in parsec) from us must it be located. 
+[IO7-T11-A]
+\end{tcolorbox}
+\newpage
+\noindent
+\begin{tcolorbox}[colback=blue!5!white,
+                  colframe=blue!75!black,
+                  title=Solution]
+As the supernova appears in the Sky as bright as the Sun, hence the received Flux from both of them in Earth's Surface must be same. 
+\\
+Let d be the distance to that Supernova.
+\\
+$$F_{supernova}=F_{Sun}$$
+$$\frac{L_{supernova}}{4\pi d^{2}}=\frac{L_{Sun}}{4\pi d_{sun}^2}$$
+$$\frac{10^{10}}{4\pi d^2}=\frac{1}{4\pi (1AU)^2}$$
+$$d=10^{\frac{10}{2}}AU=10^5 AU = 1.496 \times 10^{16}=0.5 pc$$
+\\[3EM]
+\end{tcolorbox}
+
+\\
+\section{Magnitudes}
+Magnitudes provide a system to compare how bright a star appears in a simple scale. The lower the magnitude, the brighter a celestial object is.
+\subsection{History}
+Since ancient times astronomers have recorded the positions of stars on the
+celestial sphere and measured their brightnesses. The first stellar catalogue
+was compiled in 160 BC by the Greek astronomer Hipparchus. He divided
+the stars into six classes of brightness, from the first magnitude, formed by the
+brightest stars, to the sixth, formed by the stars barely visible to the naked eye.
+However, when more sensitive instruments became available, it was clear that
+two stars with a magnitude difference of one had a flux ratio of approximately
+2.5. In 1854, Norman Pogson replaced the Hipparchus scale with a more precise
+one, while remaining as faithful as possible to the old classification method.
+According to this new scale, it was established that the ratio between the fluxes
+of a first and sixth magnitude star should be 100.
+\textit{[Fundamentals of Astronomy–Flavio Salvati]}
+\subsection{Pogson Formula}
+Magnitude is in logarithmic scale. For instance, a star of magnitude 1.0 is 2.5 times as bright as a star with magnitude 2.0. This can be formulated by Pogson's Formula. The formula does not necessarily give us the exact magnitude of a star but rather describes a relation between two stars. 
+$$m_1 - m_2 = -2.5 \log(\frac{I_1}{I_2})$$
+ where I is the intensity of the given bodies.
+\subsection{Apparent Magnitude}
+The apparent magnitude, usually represented by 
+m, describes how bright a star or celestial object appears from Earth. It can be calculated using the flux density, which varies depending on the observer’s position relative to the light-emitting source.
+$$m_1 - m_2 = -2.5 \log(\frac{F_1}{F_2})$$
+\\
+\newpage
+\begin{tcolorbox}[colback=blue!5!white,
+                  colframe=blue!75!black,
+                  title=Problem 3]
+The magnitude of the faintest star you can see with naked eyes is m = 6,
+whereas that of the brightest star in the sky is m = −1.5. What is the
+energy-flux ratio of the faintest to that of the brightest? (I07 - T15 -
+A) 
+\end{tcolorbox}
+\noindent
+\begin{tcolorbox}[colback=blue!5!white,
+                  colframe=blue!75!black,
+                  title=Solution]
+The flux ratio can be calculated as, 
+
+$$
+    m_1 - m_2 = -2.5 \log \left( \frac{F_1}{F_2} \right)
+$$
+
+\[
+\therefore \quad \frac{F_1}{F_2} = 10^{\frac{(m_2 - m_1)}{2.5}}
+\]
+
+\[
+\frac{F_{\text{min}}}{F_{\text{max}}} = 10^{\frac{6.0 - (-1.5)}{2.5}} 
+= 10^{\tfrac{7.5}{2.5}} = 1000 }
+\]
+Thus, the brightest star is 1000 times brighter than the faintest star  
+visible to the naked eye.
+\end{tcolorbox}
+\subsection{Absolutde Magnitude}
+The flux of a star depends on both its intrinsic brightness and its distance from Earth. A brighter star farther away may appear dimmer than a closer, fainter star. To compare stars fairly, astronomers use absolute magnitude, defined as the magnitude a star would have if placed at 10 parsecs. This allows direct comparison of their intrinsic luminosities rather than their fluxes.
+\\
+We can find a relation between absolute and apparent magnitude.
+$$m-M=-2.5\log \left( \frac{F_{app}}{F_{abs}} \right)$$
+Where m= apparent magnitude, M=absolute magnitude. 
+\subsection{Distance Modulus}
+From the relation between apparent and absolute magnitude, we can get the distance of that body.
+$$m-M=-2.5\log \left( \frac{F_{app}}{F_{abs}} \right)$$
+\begin{align*}
+m - M &= -2.5 \log \left( \frac{\tfrac{L}{4\pi d^2}}{\tfrac{L}{4\pi (10 \, \text{pc})^2}} \right) \\
+m - M &= -2.5 \log \left( \frac{(10 \, \text{pc})^2}{d^2} \right) \\[6pt]
+m - M &= 2.5 \log \left( \frac{d^2}{(10 \, \text{pc})^2} \right) \\[6pt]
+m - M &= 5 \log \left( \frac{d}{10 \, \text{pc}} \right) \\
+m - M &= 5 \log(d) - 5
+\end{align*}
+Therefore the distance modulus can be reprsented by:
+$$\boxed{m-M=5\log(d)-5}$$
+A different arrangement of this quation is 
+\[
+\boxed{d = 10^{\tfrac{m - M + 5}{5}}}
+\]
+\\[2EM]
+\begin{tcolorbox}[colback=blue!5!white,
+                  colframe=blue!75!black,
+                  title=Problem 4]
+Vega is known to have an apparent
+ magnitude of about 0 (in reality it is about 0.03 and fluctuates.) Given that it has an absolute
+ magnitude of about 0.58, calculate the distance.
+ [USAAAO]
+\end{tcolorbox}
+\noindent
+\begin{tcolorbox}[colback=blue!5!white,
+                  colframe=blue!75!black,
+                  title=Solution]
+Applying the equation of distance modulus we get,
+\\
+\[
+d = 10^{\frac{(0.03 - 0.58 + 5)}{5}} \ \text{pc}
+\]
+
+\[
+d = 10^{0.89} \ \text{pc}
+\]
+
+\[
+d \approx 7.76 \ \text{pc}
+\]
+Therefore Vega is 7.76 pc away from Earth.
+\end{tcolorbox}
+\end{document}
+
+
