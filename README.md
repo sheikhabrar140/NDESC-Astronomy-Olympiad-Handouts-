@@ -14,8 +14,7 @@ NDESC Interstellar is the academic team of the Notre Dame Eco and Space Club (ND
 
 Sheikh Hasin Abrar – IOAA 2024  
 Omor Bin Hayat - APhO 2024 | APhO 2025 🏅  
-Tasdik Ahmed Tonmay – IOAA 2024 🥉 | IOAA 2025 🥈  
-Junaed Labeeb Al Waasi – 3× IOAA Camper  
+Tasdik Ahmed Tonmay – IOAA 2024 🥉 | IOAA 2025 🥈   
 Nirban Bin Shahjahan - IAO 2025  
 
 ## 📬 Contact  
